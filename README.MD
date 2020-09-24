@@ -12,8 +12,5 @@
 
 ### 教學
 1. [How to build a Chat Application in under 10 minutes](https://www.youtube.com/watch?v=f8el0g_rXbY)
-2. [How To Make Message Box Using HTML And CSS | Messenger Design In HTML CSS](https://www.youtube.com/watch?v=EW9I1HqaKwk)
-
-
-
-
+2. [React JS - Building a Chat UI in 2020](https://www.youtube.com/watch?v=vu2gxHGgWIs&list=PLsS7rcLJIvNNdHIVlAquwok7G59uqNmfP)
+3. [How To Make Message Box Using HTML And CSS | Messenger Design In HTML CSS](https://www.youtube.com/watch?v=EW9I1HqaKwk)
