@@ -50,9 +50,9 @@ const webMessage = [
   {
     "no":7,
     "name": "David",
-    "photo":"/img/emoji/like.png",
+    "photo":"/img/friends/David.png",
     "type":"emoji",
-    "message":"推薦給你一張漂亮的底圖...",
+    "message":"/img/emoji/like.png",
     "dateTime":"09/23 10:16"
   }
 ]
