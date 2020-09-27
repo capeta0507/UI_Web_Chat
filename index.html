@@ -6,8 +6,84 @@
   <script src="./friend.js"></script>
   <script src="./webChat.js"></script>
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  
+  <div class="chat_container">
+    <div class="chat_icon_block">
+      <div class="myHead">
+        <img src="img/me/Johnny.png" alt="">
+      </div>
+      <div class="chat_icon">
+        <div class="myIcon active">
+          <i class="fa fa-comment msg_Y"></i>
+        </div>
+        <div class="myIcon">
+          <i class="fa fa-user msg_N"></i>
+        </div>
+        <div class="myIcon">
+          <i class="fa fa-users msg_N"></i>
+        </div>
+        <div class="myIcon">
+          <i class="fa fa-envelope msg_N"></i>
+        </div>
+        <div class="myIcon">
+          <i class="fa fa-cog msg_N"></i>
+        </div>
+        <div class="myIcon">
+          <i class="fa fa-sign-out msg_N"></i>
+        </div>
+      </div>
+    </div>
+    <div class="chat_list">
+      <div class="chatListTag">
+        <div class="head"><img src="img/friends/Alpha_Team.png" alt=""></div>
+        <div class="mytext">
+          <div class="name">Alpha_Team</div>
+          <div class="dec">Alpha 測試團隊</div>
+        </div>
+        <div class="msg_num">3</div>
+      </div>
+      <div class="chatListTag active">
+        <div class="head"><img src="img/friends/David.png" alt=""></div>
+        <div class="mytext">
+          <div class="name">David</div>
+          <div class="dec">專案經理</div>
+        </div>
+        <div class="msg_num">7</div>
+      </div>
+      <div class="chatListTag">
+        <div class="head"><img src="img/friends/Beta_Team.png" alt=""></div>
+        <div class="mytext">
+          <div class="name">Beta_Team</div>
+          <div class="dec">Beta 測試團隊</div>
+        </div>
+        <div class="msg_num">2</div>
+      </div>
+      <div class="chatListTag">
+        <div class="head"><img src="img/friends/BigBoss.png" alt=""></div>
+        <div class="mytext">
+          <div class="name">Big Boss</div>
+          <div class="dec">公司老大</div>
+        </div>
+        <!-- <div class="msg_num">0</div> -->
+      </div>
+      <div class="chatListTag">
+        <div class="head"><img src="img/friends/Final_Check.png" alt=""></div>
+        <div class="mytext">
+          <div class="name">Final_Check</div>
+          <div class="dec">最後檢測</div>
+        </div>
+        <!-- <div class="msg_num">0</div> -->
+      </div>
+    </div>
+    <div class="chat_box"></div>
+    <div class="me_block">
+      <div class="myHeadPhoto"><img src="img/me/Johnny2.jpg" alt=""></div>
+      <div class="myName">Johnny</div>
+      <div class="myTitle">網頁前端</div>
+    </div>
+  </div>
 </body>
 </html>
