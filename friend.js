@@ -99,3 +99,44 @@ const web_Friends = [
     "messageNum":1
   }
 ]
+
+let friendCard = '';
+
+web_Friends.map(data => {
+  if(data.messageNum > 0){
+    if(data.name == 'David'){
+      friendCard += `
+        <div class="chatListTag active">
+          <div class="head"><img src="${data.photo}" alt=""></div>
+          <div class="mytext">
+            <div class="name">${data.name}</div>
+            <div class="dec">${data.title}</div>
+          </div>
+          <div class="msg_num">${data.messageNum}</div>
+        </div>
+      `
+    } else {
+      friendCard += `
+        <div class="chatListTag">
+          <div class="head"><img src="${data.photo}" alt=""></div>
+          <div class="mytext">
+            <div class="name">${data.name}</div>
+            <div class="dec">${data.title}</div>
+          </div>
+          <div class="msg_num">${data.messageNum}</div>
+        </div>
+      `
+    }
+  } else {
+    friendCard += `
+      <div class="chatListTag">
+        <div class="head"><img src="${data.photo}" alt=""></div>
+        <div class="mytext">
+          <div class="name">${data.name}</div>
+          <div class="dec">${data.title}</div>
+        </div>
+      </div>
+    `
+  }
+})
+document.getElementById('myChatList').innerHTML = friendCard;
