@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="chat_container">
@@ -43,40 +44,30 @@
         </div>
         <div class="msg_num">3</div>
       </div>
-      <div class="chatListTag active">
-        <div class="head"><img src="img/friends/David.png" alt=""></div>
-        <div class="mytext">
-          <div class="name">David</div>
-          <div class="dec">專案經理</div>
+    </div>
+    <div id="chatRoom" class="chat_box">
+      <div class="message_row you-message">
+        <div class="message-content">
+          <div class="message-text">Ok then</div>
+          <div class="message-time">09/23 10:16</div>
         </div>
-        <div class="msg_num">7</div>
       </div>
-      <div class="chatListTag">
-        <div class="head"><img src="img/friends/Beta_Team.png" alt=""></div>
-        <div class="mytext">
-          <div class="name">Beta_Team</div>
-          <div class="dec">Beta 測試團隊</div>
+      <div class="message_row other-message">
+        <div class="message-content">
+          <img class="head" src="/img/friends/David.png" alt="">
+          <div class="message-text">推薦給你一張漂亮的底圖...</div>
+          <div class="message-time">09/23 10:16</div>
         </div>
-        <div class="msg_num">2</div>
       </div>
-      <div class="chatListTag">
-        <div class="head"><img src="img/friends/BigBoss.png" alt=""></div>
-        <div class="mytext">
-          <div class="name">Big Boss</div>
-          <div class="dec">公司老大</div>
+      <div class="message_row other-message">
+        <div class="message-content">
+          <img class="head" src="/img/friends/David.png" alt="">
+          <!-- <div class="message-text"></div> -->
+          <img class="ejIcon" src="/img/emoji/like.png" alt="">
+          <div class="message-time">09/23 10:16</div>
         </div>
-        <!-- <div class="msg_num">0</div> -->
-      </div>
-      <div class="chatListTag">
-        <div class="head"><img src="img/friends/Final_Check.png" alt=""></div>
-        <div class="mytext">
-          <div class="name">Final_Check</div>
-          <div class="dec">最後檢測</div>
-        </div>
-        <!-- <div class="msg_num">0</div> -->
       </div>
     </div>
-    <div class="chat_box"></div>
     <div class="me_block">
       <div class="myHeadPhoto"><img src="img/me/Johnny2.jpg" alt=""></div>
       <div class="myName">Johnny</div>
@@ -85,5 +76,11 @@
   </div>
   <script src="./friend.js"></script>
   <script src="./webChat.js"></script>
+  <script>
+    $('.chatListTag').on('click', function(){
+      $('.chatListTag').removeClass('active');
+      $(this).addClass('active');
+    })
+  </script>
 </body>
 </html>
