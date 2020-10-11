@@ -237,19 +237,19 @@ input:focus{
     font-size: 24px;
     color: #222222;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 
 }
 .me_block .myTitle{
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     color: #777777;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .me_list{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0;
 }
 .me_list .item{
     width: 100%;
